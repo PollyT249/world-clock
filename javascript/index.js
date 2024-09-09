@@ -1,11 +1,22 @@
 function updateTime() {
-  let tallinnElement = document.querySelector("#tallinn");
-  if (tallinnElement) {
-    let tallinnDateElement = tallinnElement.querySelector(".date");
-    let tallinnTimeElement = tallinnElement.querySelector(".time");
-    let tallinnTime = moment().tz("Europe/Tallinn");
-    tallinnDateElement.innerHTML = tallinnTime.format("MMMM Do YYYY");
-    tallinnTimeElement.innerHTML = tallinnTime.format(
+  let parisElement = document.querySelector("#paris");
+  if (parisElement) {
+    let parisDateElement = parisElement.querySelector(".date");
+    let parisTimeElement = parisElement.querySelector(".time");
+    let parisTime = moment().tz("Europe/Paris");
+    parisDateElement.innerHTML = parisTime.format("MMMM Do YYYY");
+    parisTimeElement.innerHTML = parisTime.format(
+      "h:mm:ss [<small>] A [</small>]"
+    );
+  }
+
+  let athensElement = document.querySelector("#athens");
+  if (athensElement) {
+    let athensDateElement = athensElement.querySelector(".date");
+    let athensTimeElement = athensElement.querySelector(".time");
+    athensTime = moment().tz("Europe/Athens");
+    athensDateElement.innerHTML = athensTime.format("MMMM Do YYYY");
+    athensTimeElement.innerHTML = athensTime.format(
       "h:mm:ss [<small>] A [</small>]"
     );
   }
