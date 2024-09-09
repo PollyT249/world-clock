@@ -27,6 +27,7 @@ select {
   margin: 60px auto;
   padding: 30px;
   border-radius: 10px;
+  border: 1px solid #62cc67;
   background: #cbffce;
   box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.3);
 }
